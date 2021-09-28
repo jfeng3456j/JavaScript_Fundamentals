@@ -69,6 +69,7 @@ function removeTask(event) {
     if (event.target.parentElement.classList.contains('delete-item')) {
         console.log(event.target);
         if (confirm("Are you sure?")) {
+            //remove the li html tag
             event.target.parentElement.parentElement.remove();
 
             //remove from localStorage
