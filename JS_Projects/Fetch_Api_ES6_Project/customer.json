@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "company" : "Google",
+        "phone": "314-900-9000"
+    },
+    {
+        "id": 2,
+        "name": "Mary Doe",
+        "company" : "Facebook",
+        "phone": "314-600-6000"
+    },
+    {
+        "id": 3,
+        "name": "Joey Doe",
+        "company" : "Apple",
+        "phone": "314-300-3000"
+    },
+    {
+        "id": 4,
+        "name": "James Doe",
+        "company" : "Amazon",
+        "phone": "314-800-8000"
+    }
+]

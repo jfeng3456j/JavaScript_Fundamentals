@@ -33,11 +33,22 @@ const posts = [{
 // getPosts();
 
 //callback asynchronous
-function createPost(post, callback) {
-    setTimeout(function () {
-        posts.push(post);
-        callback();
-    }, 2000)
+function createPost(post) {
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            posts.push(post);
+
+            const error = true;
+            if (!error) {
+                resolve();
+            } else {
+                reject('Error: Something is not right');
+            }
+
+        }, 2000)
+    });
+
+
 }
 
 function getPosts() {
@@ -57,4 +68,6 @@ function getPosts() {
 createPost({
     title: "Post Three",
     body: "this is post three"
-}, getPosts);
+}).then(getPosts).catch(function (err) {
+    console.log(err)
+});
