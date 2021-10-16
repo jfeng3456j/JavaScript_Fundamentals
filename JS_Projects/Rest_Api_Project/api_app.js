@@ -1,5 +1,5 @@
 //constructor
-
+//es5
 function easyHTTP() {
     this.http = new XMLHttpRequest();
 }
