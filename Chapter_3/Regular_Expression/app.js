@@ -65,7 +65,7 @@ re2 = /hel{2,4}o/i //{2,4} => give a range of match 2 to 4 characters of l
 
 re2 = /hel{2,}o/i //{2,} => give a range of match 2 to n characters of l
 
-//parenthese- Grouping
+//parenthese ()- Grouping
 //------------------------------------------------
 re2 = /([0-9]x){3}/i; // () => match any digits plus x 3 times
 

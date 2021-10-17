@@ -47,7 +47,7 @@ function validatePhone() {
     ^\(?\d{3}\)? [-. ]? \d{ 3 } [-. ]? \d{4} $
     */
 
-
+    // \( => literal parenthese
     const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/;
 
     if (!re.test(phone.value)) {
